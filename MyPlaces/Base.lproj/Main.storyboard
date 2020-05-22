@@ -401,6 +401,17 @@
                                     <action selector="doneButtonPressed" destination="Vl0-qT-TQM" eventType="touchUpInside" id="kir-8r-FLR"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b5q-Wp-Sac">
+                                <rect key="frame" x="182" y="772" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Hru-h5-9vl"/>
+                                    <constraint firstAttribute="height" constant="50" id="KSW-1I-wLb"/>
+                                </constraints>
+                                <state key="normal" image="GetDirection"/>
+                                <connections>
+                                    <action selector="goButtonPressed" destination="Vl0-qT-TQM" eventType="touchUpInside" id="kax-Vz-0e5"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OxQ-5c-xgl">
                                 <rect key="frame" x="344" y="701" width="30" height="30"/>
                                 <constraints>
@@ -425,9 +436,11 @@
                             <constraint firstItem="9jS-HD-kYV" firstAttribute="trailing" secondItem="OtJ-D2-hBt" secondAttribute="trailing" id="PeB-pU-rUN"/>
                             <constraint firstItem="FC6-Ap-aA5" firstAttribute="centerX" secondItem="CW0-jj-eQC" secondAttribute="centerX" id="Sj1-o1-STq"/>
                             <constraint firstItem="OtJ-D2-hBt" firstAttribute="bottom" secondItem="FC6-Ap-aA5" secondAttribute="bottom" constant="40" id="dAU-Ul-7zn"/>
+                            <constraint firstItem="b5q-Wp-Sac" firstAttribute="centerX" secondItem="CW0-jj-eQC" secondAttribute="centerX" id="erf-SV-dnR"/>
                             <constraint firstItem="HFL-n6-JJo" firstAttribute="top" secondItem="OtJ-D2-hBt" secondAttribute="top" constant="40" id="mfH-TZ-vhT"/>
                             <constraint firstItem="OtJ-D2-hBt" firstAttribute="bottom" secondItem="OxQ-5c-xgl" secondAttribute="bottom" constant="131" id="nFO-ps-i4S"/>
                             <constraint firstItem="bIu-K8-YS4" firstAttribute="centerY" secondItem="CW0-jj-eQC" secondAttribute="centerY" constant="-20" id="pL1-Vl-8UH"/>
+                            <constraint firstItem="OtJ-D2-hBt" firstAttribute="bottom" secondItem="b5q-Wp-Sac" secondAttribute="bottom" constant="40" id="u9J-2U-qEv"/>
                             <constraint firstAttribute="bottom" secondItem="9jS-HD-kYV" secondAttribute="bottom" id="v2O-4m-x9j"/>
                             <constraint firstItem="OtJ-D2-hBt" firstAttribute="trailing" secondItem="HFL-n6-JJo" secondAttribute="trailing" constant="40" id="wcf-0N-ww3"/>
                         </constraints>
@@ -436,6 +449,7 @@
                     <connections>
                         <outlet property="addressLabel" destination="4hv-Cu-HwM" id="SP7-Pv-03W"/>
                         <outlet property="doneButton" destination="FC6-Ap-aA5" id="QJ6-Vc-5PM"/>
+                        <outlet property="goButton" destination="b5q-Wp-Sac" id="h6m-GQ-PGL"/>
                         <outlet property="mapPinImage" destination="bIu-K8-YS4" id="j8j-7q-byj"/>
                         <outlet property="mapView" destination="9jS-HD-kYV" id="0HD-ju-Eja"/>
                     </connections>
@@ -484,6 +498,7 @@
     </scenes>
     <resources>
         <image name="AZ" width="25" height="24"/>
+        <image name="GetDirection" width="50" height="50"/>
         <image name="Location" width="128" height="128"/>
         <image name="Photo" width="195" height="196"/>
         <image name="Pin" width="42" height="42"/>
